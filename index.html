@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Naturegram </title>
+    <script src="script.js"></script>
+    <script src="template.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body onload="storyPreview()">
+
+    <header>
+        <a href="https://sinan-fischer.developerakademie.net/Naturegram/index.html"><img src="img//logo.png"
+                class="logo"> </a>
+
+        <input placeholder="Creatorname" id="search" class="search move" onkeyup="searchCreator('search')">
+
+        <nav class="move">
+            <img src="img/home.png" onclick="showPosts()">
+            <img src="img/send.png">
+            <img src="img/add.png">
+            <img src="img/loupe.png">
+            <img src="img/heart.png">
+            <img src="img/fox-pp.jpg">
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+
+        <!-- Left section - Like fStorys and Posts  -->
+
+
+        <div class="left-section">
+            <div class="story-section" id="story-section">
+            </div>
+
+            <div class="responsive-search-bar-bg">
+                <input placeholder="Creatorname" id="search-responsive" onkeyup="searchCreator('search-responsive')"
+                    class="responsive-search-bar">
+            </div>
+
+            <div id="postings"> </div>
+
+            <div class="postings">
+            </div>
+
+
+
+        </div>
+
+
+        <!-- Right Section - Like friend requests and some additional information  -->
+
+
+        <div class="right-section">
+            <div class="my-profile">
+                <div class="flex">
+                    <img src="img/fox-pp.jpg">
+                    <div class="column">
+                        <span>
+                            <b> sinan_792 </b>
+                        </span>
+                        <span class="gray">
+                            sinan *peace*
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        Wechseln
+                    </a>
+                </div>
+            </div>
+
+            <div class="suggestions-headline">
+                <span class="gray">
+                    <b> Vorschläge für dich </b>
+                </span>
+                <span>
+                    <b> Alle ansehen </b>
+                </span>
+            </div>
+
+            <!-- ID for Friendssuggestions (javascript HTMLfunction) -->
+            <div id="suggestions-friends"> </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <!-- Comment Section (Pop Ups)-->
+
+    <div class="comment-section-bg d-none" id="comment-popup">
+        <!--Hier möchte ich komments stehen haben-->
+        <div class="headline-comment-section-bg"> 
+            <div class="headline-comment-section"> 
+                <img src="img/logo.png">
+                <span> Kommentare </span>
+            </div>
+
+
+
+        </div>
+        <!--Hier beginnt der neue Abschnitt -->
+        <img src="img/icons8-close-64.png" class="close-comments-window" onclick="fadeCommentSection()">
+        <div class="comment-section" id="comment-popup-content">
+
+            <!--Becomes display none (max-width 1000px)-->
+            <img src="img/berge-mit-fluss.jpg" class="comment-image" id="posting-image">
+
+            <!-- column "kommentar" und "input div"-->
+            <div class="column-comment-section">
+                <!-- Der kommentar-->
+                <div>
+
+
+                    <div class="comments-popup">
+                        <div id="pp-image-popup"> </div>
+                        <div class="comment-content" id="newComments">
+                        </div>
+
+                    </div>
+                </div>
+                <!--Der kommentar ende -->
+<!-- input div -->
+                <div id="add-input-to-comment-section">
+
+                </div>
+                <!--Input div ende  -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="stickybar">
+        <nav>
+            <img src="img/home.png" onclick="showPosts()">
+            <img src="img/send.png">
+            <img src="img/add.png">
+            <img src="img/loupe.png">
+            <img src="img/heart.png">
+            <img src="img/fox-pp.jpg">
+        </nav>
+    </div>
+</body>
+
+</html>
+
+
+<!-- ALL links 
+<a href="https://www.flaticon.com/free-icons/comment" title="comment icons">Comment icons created by Freepik - Flaticon</a>
+<a target="_blank" href="https://icons8.com/icon/1iF9PyJ2Thzo/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/100004/email-send">Email Send</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Kiranshastry - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/more" title="more icons">More icons created by Kirill Kazachek - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/bookmark" title="bookmark icons">Bookmark icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/save" title="save icons">Save icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/trash" title="trash icons">Trash icons created by Kiranshastry - Flaticon</a>
+<a target="_blank" href="https://icons8.com/icon/vu5kHwGC4PNb/close">Close</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
+
+
+
+
+
+-->
